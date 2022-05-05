@@ -1,0 +1,32 @@
+.sidebarList {
+    list-style: none;
+    padding: 5px;
+    margin : 50px
+  }
+  
+  .sidebarListItem {
+    /* padding: 5px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 170px;
+    width: 83px;
+    padding-left: 6px;
+    height: 35px;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: rgb(189, 189, 189);
+  }
+  
+  .sidebarIcon{
+      margin-right: 5px;
+      font-size: 20px !important;
+  }
+
+  .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+    padding-right: 3px;
+    border-radius: 18px;
+  }

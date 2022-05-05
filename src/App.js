@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/pages/home/Home";
+import Login from "./components/pages/login/Login";
+
+
+
+import React from "react";
+
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Cancellation from "./components/pages/cancellationpolicy/Cancellation";
+import Privacy from "./components/pages/privacy/Privacy";
+import Faqs from "./components/pages/faqs/faqs";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <BrowserRouter  basename="parknb">
+    <Routes>
+      <Route path = "/login" element={<Login />} />
+      <Route path="/home/*" element={<Home />}>
+       <Route path="cancel" element={<Cancellation />}/>
+       <Route path="privacy" element={<Privacy />}/>
+       <Route path="faqs" element={<Faqs />}/>
+       
+      </Route>
+     
+      
+    </Routes>
+  </BrowserRouter>
     </div>
   );
 }

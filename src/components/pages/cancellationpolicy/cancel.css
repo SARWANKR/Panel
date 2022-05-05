@@ -1,0 +1,36 @@
+#heading{
+    color : rgb(15, 12, 34);
+    font-size: 25px;
+    font-family: cursive;
+    /* font-style: italic; */
+    font-weight: 200;
+    text-align: center;
+    text-decoration: underline;
+    /* background-image: linear-gradient(45deg, #fdf66c, #036f7e); */
+    border-radius: 150px;
+    
+ }
+ .btn-primary{
+    background-color: #0c0d27;
+    /* border-color: #ffffff; */
+    border-radius: 10px;
+    color: beige;
+    word-spacing: 20px;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 4px;
+    margin-top: 20px;
+    margin-left: 50px;
+ 
+   
+
+}
+
+ h1::first-letter {
+    font-size: 150%;
+    color: rgb(141, 16, 0);
+
+  }
+
+
+
